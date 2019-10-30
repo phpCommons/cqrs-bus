@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  PhpCommons\CQRSBus\Bus\Command\CommandBus:
+      autoconfigure: false
+      tags:
+          - { name: messenger.bus.command, bus: command.bus }
+
+  PhpCommons\CQRSBus\Bus\Query\QueryBus:
+      autoconfigure: false
+      tags:
+          - { name: messenger.bus.query, bus: query.bus }
