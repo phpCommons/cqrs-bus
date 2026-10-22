@@ -1,5 +1,13 @@
-# cqrs-bus
-CQRS Bus is Symfony 4.3+ Bundle with Command Bus &amp; QueryBus using Symfony Messanger
+# CQRSBus (php-commons/cqrs-bus)
+
+[![Tests](https://github.com/phpCommons/cqrs-bus/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/phpCommons/cqrs-bus/actions/workflows/tests.yml)
+![PHP](https://img.shields.io/badge/PHP-8.5%2B-777bb4)
+![Symfony](https://img.shields.io/badge/Symfony-8-black)
+![PHPUnit](https://img.shields.io/badge/PHPUnit-12-success)
+
+The HTML test report is published as a plain `test-report.html` artifact of each [Tests workflow run](https://github.com/phpCommons/cqrs-bus/actions/workflows/tests.yml).
+
+CQRS Bus is a Symfony 8 bundle with Command Bus & Query Bus using Symfony Messenger.
 
 ## Installation
 ```bash

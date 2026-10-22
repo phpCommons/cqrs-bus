@@ -2,9 +2,7 @@
 
 namespace PhpCommons\CQRSBus\Application\Command;
 
-use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
-
-interface CommandHandlerInterface extends MessageHandlerInterface
+interface CommandHandlerInterface
 {
     public function handle(CommandInterface $command): void;
 }

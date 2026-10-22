@@ -4,12 +4,13 @@ declare(strict_types=1);
 namespace Tests\Unit\Handlers\Command;
 
 use PhpCommons\CQRSBus\Handlers\Query\AbstractQueryHandler;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 use Tests\Mocks\GetUserNameByIdQueryTestMock;
 
 class QueryHandlerTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function whenHandlerCalledAsFunctionThenExpectsHandleMethodsHasBeenExecuted(): void
     {
         $testCommandHandler = $this->createPartialMock(AbstractQueryHandler::class, ['handle']);
