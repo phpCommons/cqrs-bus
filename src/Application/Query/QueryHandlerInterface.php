@@ -2,9 +2,7 @@
 
 namespace PhpCommons\CQRSBus\Application\Query;
 
-use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
-
-interface QueryHandlerInterface extends MessageHandlerInterface
+interface QueryHandlerInterface
 {
     public function handle(QueryInterface $query);
 }

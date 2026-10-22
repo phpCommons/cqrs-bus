@@ -5,20 +5,11 @@
 # IntelliJ project files
 .idea
 *.iml
-.env/
-
-/vendor/
-
-###> phpunit/phpunit ###
-/phpunit.xml
-.phpunit.result.cache
-###< phpunit/phpunit ###
-
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/public/bundles/
 /var/
 /vendor/
-###< symfony/framework-bundle ###
+.idea/
+
+/phpunit.xml
+/test-results/
+/tests/reports/
+.phpunit.result.cache

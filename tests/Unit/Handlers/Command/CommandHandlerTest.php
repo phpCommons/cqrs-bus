@@ -4,12 +4,13 @@ declare(strict_types=1);
 namespace Tests\Unit\Handlers\Command;
 
 use PhpCommons\CQRSBus\Handlers\Command\AbstractCommandHandler;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 use Tests\Mocks\SaveNameCommandTestMock;
 
 class CommandHandlerTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function whenHandlerCalledAsFunctionThenExpectsHandleMethodsHasBeenExecuted(): void
     {
         $testCommandHandler = $this->createPartialMock(AbstractCommandHandler::class, ['handle']);
